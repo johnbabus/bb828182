@@ -1,0 +1,33 @@
+---
+title: "Assessment 1.1"
+author: "John babu shaik s4606562"
+date: "19/05/2021"
+output: html_document
+---
+
+## R Markdown editing
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+## Task 6
+fastfood = read.csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-09-04/fastfood_calories.csv')
+
+library(tidyr)
+
+## task 7
+head(fastfood,10)
+
+## Task 8
+fastfood[which(fastfood[,4]>1000),]
+
+## Task 9
+x <- fastfood[which(fastfood[,6]>40),]
+
+dont_eat_this <- x[which(x[,11]>80),]
+
+dont_eat_this
+
+## Task 10
+fastfood[which(fastfood[,2]=="Mcdonalds"),]
+
+
